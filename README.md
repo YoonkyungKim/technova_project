@@ -1,4 +1,4 @@
-# Conquer - our daily life
+# Conquer - our daily lives
 
 This mobile app assigns appropriate tasks according to your feeling/mental health.  
 Let's start with one small task at a time.  
