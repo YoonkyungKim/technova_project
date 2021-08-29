@@ -8,7 +8,6 @@ import LoginPage from './pages/LoginPage';
 import HomePage from './pages/HomePage';
 import QuestionPage from './pages/QuestionPage';
 import TaskPage from './pages/TaskPage';
-import DashboardPage from './pages/DashboardPage';
 import CongratsPage from './pages/CongratsPage';
 import ResultPage from './pages/ResultPage';
 import DonateConfirmationPage from './pages/DonateConfirmationPage';
@@ -31,12 +30,6 @@ const navigator = createStackNavigator(
       screen: QuestionPage,
       navigationOptions: ({ navigation }) => ({
         title: "How's your feeling today?",
-      }),
-    },
-    DashboardPage: {
-      screen: DashboardPage,
-      navigationOptions: ({ navigation }) => ({
-        title: "Dashboard",
       }),
     },
     TaskPage: {
@@ -65,7 +58,7 @@ const navigator = createStackNavigator(
     },
   },
   {
-    initialRouteName: 'QuestionPage',
+    initialRouteName: 'LoginPage',
     defaultNavigationOptions: {
       title: 'App'
     }
@@ -73,21 +66,3 @@ const navigator = createStackNavigator(
 );
 
 export default createAppContainer(navigator);
-
-// export default function App() {
-//   return (
-//     <View style={styles.container}>
-//       <Text>Open up App.js to start working on your app!</Text>
-//       <StatusBar style="auto" />
-//     </View>
-//   );
-// }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#fff',
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//   },
-// });

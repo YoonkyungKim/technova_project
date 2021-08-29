@@ -7,13 +7,14 @@ const HomePage = ({ navigation }) => {
         <>
         <ScrollView>
             <View>
-                    <TouchableOpacity
-                        style={styles.task}
-                    >
-                        <View style={{flex: 1}}>
-                            <ImageBackground source={require("../assets/home.png")} resizeMode='cover' style={{ flex: 1, justifyContent: "center"}}/>
-                        </View>
-                    </TouchableOpacity>
+                <TouchableOpacity
+                    style={styles.task}
+                >
+                    <View style={{flex: 1}}>
+                        <ImageBackground source={require("../assets/home.png")} resizeMode='cover' style={{ flex: 1, justifyContent: "center"}}/>
+                    </View>
+                </TouchableOpacity>
+
                 <TouchableOpacity
                     style={styles.buttonStyle}
                     onPress={() => navigation.navigate("QuestionPage")}
@@ -61,8 +62,6 @@ const styles = StyleSheet.create({
     task: { 
         height: 300,
         alignItems: "left",
-        // backgroundColor: "#6b63ff",
-        // padding: 30,
         paddingTop: 5,
         borderRadius: 10, 
         margin: 10,
